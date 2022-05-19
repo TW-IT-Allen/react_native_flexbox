@@ -76,7 +76,7 @@ class App extends Component {
                       if (obj.value == 0) {
                         return (
                           <TouchableOpacity key={obj.value} onPress={() => this._onPress(obj)} style={Style.touch0} activeOpacity={0.8}>
-                            <Text style={{ ...Style.computeButton, color: 'white' }}>{obj.value}</Text>
+                            <Text style={{ ...Style.computeButton, color: 'black' }}>{obj.value}</Text>
                           </TouchableOpacity>
                         )
                       } else if (obj.type == TYPES.FUNCTION) {
@@ -94,7 +94,7 @@ class App extends Component {
                       } else {
                         return (
                           <TouchableOpacity key={obj.value} onPress={() => this._onPress(obj)} style={{ ...Style.touch, backgroundColor: 'lightgrey', opacity: 0.7 }} activeOpacity={0.8}>
-                            <Text style={{ ...Style.computeButton, color: 'white' }}>{obj.value}</Text>
+                            <Text style={{ ...Style.computeButton, color: 'black' }}>{obj.value}</Text>
                           </TouchableOpacity>
                         )
                       }
